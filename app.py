@@ -106,7 +106,7 @@ if selected == 'Activity Based Suggestions':
     song_range = st.number_input("Enter Number of Songs :", min_value=1, max_value=120, value=10)
     # Button to generate playlist
     if st.button("Generate Playlist"):
-        url = 'https://a529-185-36-251-58.ngrok-free.app/get_songs_activity'
+        url = ' https://5fa8-163-119-37-39.ngrok-free.app/get_songs_activity'
         data = {
             'genre': activity,
             'max_songs': song_range
@@ -184,7 +184,7 @@ if selected == "Metric Based Suggestions":
     if st.button("Generate Playlist"):
         # Call function to generate playlist based on selected metrics
         #generate_playlist_metic(song_range, bpm_range, mode, danceability, valence, energy, acousticness, instrumentalness, liveness, speechiness)
-        url = 'https://a529-185-36-251-58.ngrok-free.app/get_songs_metric'
+        url = ' https://5fa8-163-119-37-39.ngrok-free.app/get_songs_metric'
         #print("###########################")
         #print("bpm range =", bpm_range)
         data = {
